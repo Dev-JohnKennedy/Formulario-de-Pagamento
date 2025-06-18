@@ -1,18 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto HashForms</title>
+    <title>Formulario de Pagamento</title>
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="images">
-      <img
-        src="img/Logo JK.png"
-      />
-      <img
-        src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fa6d41686876ceccfc436dd310b9e49aa.cdn.bubble.io%2Fd219%2Ff1723121799406x669791932198187400%2Foie_transparent%2520%25281%2529-fotor-202408089554.png?w=96&amp;h=28&amp;auto=compress&amp;dpr=1&amp;fit=max"
-      />
-    </div>
+    <main class="container">
+      <div class="images">
+        <img src="img/Logo JK.png" />
+        <img
+          src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fa6d41686876ceccfc436dd310b9e49aa.cdn.bubble.io%2Fd219%2Ff1723121799406x669791932198187400%2Foie_transparent%2520%25281%2529-fotor-202408089554.png?w=96&amp;h=28&amp;auto=compress&amp;dpr=1&amp;fit=max"
+        />
+      </div>
+
+      <div class="boxes">
+        <div class="box1">
+          <section class="meus-dados">
+            <h1><i class="bxr bx-user-circle"></i> Meus Dados</h1>
+            <p>Confirme seus dados. Eles aparecerão em sua nota fiscal.</p>
+
+            <form action="#" id="form">
+              <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="form-gounp">
+                  <label for="name">Nome:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Digite o seu nome"
+                    required
+                  />
+                </div>
+
+                <div class="form-gounp">
+                  <label for="cpf">Nome:</label>
+                  <input
+                    type="number"
+                    name="cpf"
+                    id="cpf"
+                    placeholder="Digite o seu CPF"
+                    required
+                  />
+                </div>
+
+                <div class="form-gounp">
+                  <label for="telefone">Nome:</label>
+                  <input
+                    type="number"
+                    name="telefone"
+                    id="telefone"
+                    placeholder="Digite o seu Telefone"
+                    required
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Endereço</legend>
+                <div class="form-group">
+                  <label for="cep">CEP:</label>
+                  <input
+                    type="number"
+                    nome="cep"
+                    id="cep"
+                    placeholder="Digite o seu CEP"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="road">Rua:</label>
+                  <input
+                    type="text"
+                    nome="road"
+                    id="road"
+                    placeholder="Digite sua rua"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="road">Número:</label>
+                  <input
+                    type="number"
+                    nome="number"
+                    id="number"
+                    placeholder="Número da casa"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="complement">Complemento:</label>
+                  <input
+                    type="text"
+                    nome="complement"
+                    id="complement"
+                    placeholder="Complemento"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="neighborhood">Bairro:</label>
+                  <input
+                    type="text"
+                    nome="neighborhood"
+                    id="neighborhood"
+                    placeholder="Bairro"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="city">Cidade:</label>
+                  <input
+                    type="text"
+                    nome="city"
+                    id="city"
+                    placeholder="Cidade"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="state">Estado:</label>
+                  <input
+                    type="text"
+                    nome="state"
+                    id="state"
+                    placeholder="Estado"
+                    required
+                  />
+                </div>
+              </fieldset>
+
+              <button type="submit">Avançar</button>
+            </form>
+          </section>
+        </div>
+        <div class="box2">
+          <section class="Resumo">
+            <h2>Resumo</h2>
+            <p>Black Friday - Lote 01: R$1.200,00</p>
+            <p>Total: 12x R$ 100,00 ou R$ 1.200,00 à vista</p>
+          </section>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
