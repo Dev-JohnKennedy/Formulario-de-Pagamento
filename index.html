@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario de Pagamento</title>
+    <link rel="stylesheet" href="style/style.css">
     <link
-      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
@@ -13,15 +14,12 @@
     <main class="container">
       <div class="images">
         <img src="img/Logo JK.png" />
-        <img
-          src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fa6d41686876ceccfc436dd310b9e49aa.cdn.bubble.io%2Fd219%2Ff1723121799406x669791932198187400%2Foie_transparent%2520%25281%2529-fotor-202408089554.png?w=96&amp;h=28&amp;auto=compress&amp;dpr=1&amp;fit=max"
-        />
       </div>
 
       <div class="boxes">
         <div class="box1">
           <section class="my-data">
-            <h1><i class="bxr bx-user-circle"></i> Meus Dados</h1>
+            <h1><i class="bx bx-user-circle"></i> Meus Dados</h1>
             <p>Confirme seus dados. Eles aparecerão em sua nota fiscal.</p>
 
             <form action="#" id="form">
@@ -147,7 +145,7 @@
         </div>
         <div class="box2">
           <section class="summary">
-            <h2><i class="bxr bx-receipt"></i> Resumo</h2>
+            <h2><i class="bx bx-receipt"></i> Resumo</h2>
             <div class="item-summary">
               <p>Black Friday - Lote 01: R$1.200,00</p>
               <p>Total: 12x R$ 100,00 ou R$ 1.200,00 à vista</p>
@@ -173,11 +171,42 @@
             </div>
 
             <div class="icons">
+              <i class="bx bxl-mastercard"></i>
+              <i class="bx bxl-visa"></i>
+              <i class="bx bxl-paypal"></i>
+              <i class="bx bxl-google"></i>
+              <i class="bx bx-barcode"></i>
+            </div>
 
+            <div class="garantia">
+              <div class="garantia-box">
+                <h2>Você tem 15 dias de garantia</h2>
+                <p>
+                  Experimente! Se não gostar ou ver que não é para covê,
+                  devolvemos o seu dinheiro! Sem letras miúdas.
+                </p>
+
+                <p>
+                  <i class="bx bx-check-shield"></i>
+                  <strong>Suas informações estão seguras</strong>
+                </p>
+
+                <img
+                  src="img/safe.jpg"
+                  alt="Imagem carrinho de supermercado com logos de segurança"
+                  width="300px"
+                />
+              </div>
             </div>
           </section>
         </div>
       </div>
     </main>
+
+    <footer>
+      <p>
+        <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a>
+      </p>
+    </footer>
   </body>
 </html>
