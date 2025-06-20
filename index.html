@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario de Pagamento</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -13,24 +13,24 @@
   <body>
     <main class="container">
       <div class="images">
-        <img src="img/Logo JK.png" />
+        <!-- Imagem da Empresa -->
       </div>
 
       <div class="boxes">
         <div class="box1">
-          <section class="my-data">
+          <section class="meus-dados">
             <h1><i class="bx bx-user-circle"></i> Meus Dados</h1>
             <p>Confirme seus dados. Eles aparecerão em sua nota fiscal.</p>
 
-            <form action="#" id="form">
+            <form action="#" id="formulario">
               <fieldset>
                 <legend>Dados Pessoais</legend>
                 <div class="form-gounp">
-                  <label for="name">Nome:</label>
+                  <label for="nome">Nome:</label>
                   <input
                     type="text"
-                    name="name"
-                    id="name"
+                    name="nome"
+                    id="nome"
                     placeholder="Digite o seu nome"
                     required
                   />
@@ -73,98 +73,108 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="road">Rua:</label>
+                  <label for="rua">Rua:</label>
                   <input
                     type="text"
-                    nome="road"
-                    id="road"
-                    placeholder="Digite sua rua"
+                    nome="rua"
+                    id="rua"
+                    placeholder="Digite o nome da Rua"
                     required
                   />
                 </div>
 
                 <div class="form-group">
-                  <label for="road">Número:</label>
+                  <label for="numero">Número:</label>
                   <input
                     type="number"
-                    nome="number"
-                    id="number"
-                    placeholder="Número da casa"
+                    nome="numero"
+                    id="numero"
+                    placeholder="Digite o número da Residência"
                     required
                   />
                 </div>
 
                 <div class="form-group">
-                  <label for="complement">Complemento:</label>
+                  <label for="complemento">Complemento:</label>
                   <input
                     type="text"
-                    nome="complement"
-                    id="complement"
-                    placeholder="Complemento"
+                    nome="complemento"
+                    id="complemento"
+                    placeholder="Digite o seu Complemento"
                     required
                   />
                 </div>
 
                 <div class="form-group">
-                  <label for="neighborhood">Bairro:</label>
+                  <label for="bairro">Bairro:</label>
                   <input
                     type="text"
-                    nome="neighborhood"
-                    id="neighborhood"
-                    placeholder="Bairro"
+                    nome="bairro"
+                    id="bairro"
+                    placeholder="Digite o seu Bairro"
                     required
                   />
                 </div>
 
                 <div class="form-group">
-                  <label for="city">Cidade:</label>
+                  <label for="cidade">Cidade:</label>
                   <input
                     type="text"
-                    nome="city"
-                    id="city"
-                    placeholder="Cidade"
+                    nome="cidade"
+                    id="cidade"
+                    placeholder="Digite a sua Cidade"
                     required
                   />
                 </div>
 
                 <div class="form-group">
-                  <label for="state">Estado:</label>
+                  <label for="estado">Estado:</label>
                   <input
                     type="text"
-                    nome="state"
-                    id="state"
-                    placeholder="Estado"
+                    nome="estado"
+                    id="estado"
+                    placeholder="Digite o seu Estado"
                     required
                   />
                 </div>
               </fieldset>
 
-              <button type="submit">Avançar</button>
+              <button id="form_btn" type="submit">Avançar</button>
             </form>
           </section>
         </div>
         <div class="box2">
-          <section class="summary">
+          <section class="resumo">
             <h2><i class="bx bx-receipt"></i> Resumo</h2>
-            <div class="item-summary">
+            <div class="resumo-item">
               <p>Black Friday - Lote 01: R$1.200,00</p>
               <p>Total: 12x R$ 100,00 ou R$ 1.200,00 à vista</p>
             </div>
 
             <div class="apply-discount">
-              <div class="applay-discount-header">
+              <div class="apply-discount-header" onclick="toggleDiscount()">
                 <span>Aplicar cumpom de desconto</span>
-                <i id="toogle-icon" class="bxr bx-chevron-down"></i>
+                <i id="toogle-icon" class="bx bxs-chevron-down"></i>
               </div>
 
-              <div class="applay-discount-body">
+              <div class="applay-discount-body" id="apply-discount-body">
                 <input
                   type="text"
                   id="discount-code"
                   placeholder="Digite o código de desconto"
                 />
-                <button type="button">Aplicar</button>
-                <span>Mensagem de desconto</span>
+                <button
+                  id="discount-btn"
+                  type="button"
+                  onclick="applyDiscount()"
+                >
+                  Aplicar
+                </button>
+                <span
+                  id="discount-message"
+                  style="display: block; margin-top: 10px; color: green"
+                  >Desconto de DESCONTO10 aplicado!</span
+                >
 
                 <p id="total-price">Preço Total: R$ 1200,00</p>
               </div>
@@ -208,5 +218,8 @@
         <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a>
       </p>
     </footer>
+
+    <script src="js/formulario.js"></script>
+    <script src="js/desconto.js"></script>
   </body>
 </html>
