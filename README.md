@@ -64,21 +64,6 @@ Manipulação de DOM.
 
 Armazenamento com localStorage.
 
-🔧 Como Usar
-Clone ou baixe este repositório:
-
-bash
-Copiar
-Editar
-git clone https://github.com/seu-usuario/formulario-pagamento.git
-Navegue até o diretório:
-
-bash
-Copiar
-Editar
-cd formulario-pagamento
-Abra o arquivo index.html no seu navegador preferido.
-
 🐞 Possíveis Melhorias Futuras
 Máscaras nos campos (ex: CPF, telefone, CEP).
 
